@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>webpack ES6 demo</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .slider-wrapper {
+            width:100%;
+            position:relative;
+            overflow:hidden;
+            height: 500px;
+            transition: all 0.3s;
+        }
+        .slider-item {
+            width:49%;
+            height: 500px;
+            text-align: center;
+            display:inline-block;
+            overflow: hidden;
+        }
+        .slider-item img {
+            height:100%;
+        }
+        .slider-navigator {
+            position:absolute;
+            bottom:0;
+            right:0;
+            width:50%;
+        }
+        .slider-navigator-dot {
+            background: #ccc;
+            width:30px;
+            height:30px;
+            display: inline-block;
+        }
+
+        .hidden {
+            display:none;
+        }
+    </style>
+
+
+
+    <div class="slider-container">
+        <div class="slider-nav">
+            <a href="#" class="slider-nav-left">left</a>
+            <a href="#" class="slider-nav-right">right</a>
+        </div>
+        <div class="slider-wrapper">
+            <div class="slider-item">
+                <img src="./images/img_1.jpg" />
+            </div>
+            <div class="slider-item">
+                <img src="./images/img_2.jpg" />
+            </div>
+            <div class="slider-item">
+                <img src="./images/img_3.jpg" />
+            </div>
+            <div class="slider-item">
+                <img src="./images/img_4.jpg" />
+            </div>
+            <div class="slider-item">
+                <img src="./images/img_2.jpg" />
+            </div>
+            <div class="slider-item">
+                <img src="./images/img_1.jpg" />
+            </div>
+            <div class="slider-item">
+                <img src="./images/img_3.jpg" />
+            </div>
+            <div class="slider-item">
+                <img src="./images/img_4.jpg" />
+            </div>
+        </div>
+        <div class="slider-navigator">
+            <div class="slider-navigator-dot">
+                <a href="#">1</a>
+            </div>
+            <div class="slider-navigator-dot">
+                <a href="#">2</a>
+            </div>
+            <div class="slider-navigator-dot">
+                <a href="#">3</a>
+            </div>
+            <div class="slider-navigator-dot">
+                <a href="#">4</a>
+            </div>
+            <div class="slider-navigator-dot">
+                <a href="#">5</a>
+            </div>
+            <div class="slider-navigator-dot">
+                <a href="#">6</a>
+            </div>
+            <div class="slider-navigator-dot">
+                <a href="#">7</a>
+            </div>
+            <div class="slider-navigator-dot">
+                <a href="#">8</a>
+            </div>
+        </div>
+    </div>
+
+
+<script src="bundle.js"></script>
+</body>
+</html>
